@@ -21,17 +21,19 @@ function Settings({loading, updateSettingsMutation}) {
   const [emailNotifications, setEmailNotifications] = useState(false);
   const [emailError, setEmailError] = useState(false);
 
-  useEffect(({settingsQuery}) => {
-    if (settingsQuery.loading) {
+  /*
+  useEffect((settingsQuery) => {
+    if (loading) {
       return null;
     }
-
+    console.log(settingsQuery);
     setAutoPublish(settingsQuery.autoPublish);
     setEmail(settingsQuery.email);
     setEmailNotifications(settingsQuery.emailNotifications);
 
     return {autoPublish, email, emailNotifications};
   }, []);
+  */
 
   const handleAutoPublishChange = (value) => {
     setAutoPublish(value[0] === 'enabled');

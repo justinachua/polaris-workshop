@@ -39,14 +39,20 @@ At the end of this workshop you will have built something that looks like this.
 
 ![Settings page screenshot](public/images/settings-screenshot.png)
 
-[Live demo](https://polaris-product-reviews.glitch.me/)
-
-If for any reason you cannot get your development environement working, we have provided an alternative through glitch.com. You can use this to follow through the workshop using only your browser.
+If for any reason you cannot get your development environment working, we have provided an alternative through glitch.com. You can use this to follow through the workshop using only your browser.
 
 https://glitch.com/edit/#!/polaris-workshop-starter
 
 ## Step 1: Setting up your app (Dom)
 
+> Note: You may either complete this workshop by cloning your repo or using the codesandbox.io link below. 
+
+### CodeSandBox Setup
+
+Goto the Code Sandbox for this workshop and fork it.
+[https://codesandbox.io/s/github/DevDegree/polaris-workshop](https://codesandbox.io/s/github/DevDegree/polaris-workshop)
+
+### VSCode Setup 
 `git clone git@github.com:Shopify/product-reviews-polaris-example.git`
 
 Now change into the new directory we just cloned
