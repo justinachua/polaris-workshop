@@ -14,7 +14,12 @@
     "no-process-env": "off",
     "no-warning-comments": "off",
     "no-negated-condition": "off",
-    "no-unused-vars": ["warn", {"argsIgnorePattern": "^_"}],
+    "no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
     "consistent-return": "off",
     "prefer-destructuring": "off",
     "match-default-export-name": "off",
