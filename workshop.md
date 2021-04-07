@@ -34,7 +34,7 @@ At the end of this workshop you will have built something that looks like this.
 🖥️ Goto the Code Sandbox for this workshop and fork it.
 [https://codesandbox.io/s/github/DevDegree/polaris-workshop](https://codesandbox.io/s/github/DevDegree/polaris-workshop)
 
-Ensure you have forked the project and all dependancies have finished loading before continueing.
+Ensure you have forked the project and all dependancies have finished loading before continuing.
 
 🖥️ Click on the Live icon in the left hand side of the codesandbox and share the Collaboration link with your teammates.
 
