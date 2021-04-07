@@ -3,13 +3,12 @@ import ApolloClient from 'apollo-boost';
 import {ApolloProvider} from 'react-apollo';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import {AppProvider} from '@shopify/polaris';
+// import '@shopify/polaris/dist/styles.css';
 
 import ReviewList from './routes/ReviewList';
 import ReviewDetails from './routes/ReviewDetails';
 import Settings from './routes/Settings';
 import NotFound from './routes/NotFound';
-
-import '@shopify/polaris/styles.css';
 
 const client = new ApolloClient();
 

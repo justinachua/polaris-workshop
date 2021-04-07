@@ -11,8 +11,8 @@ import {
   TextContainer,
 } from '@shopify/polaris';
 
+import {SettingsMajor} from '@shopify/polaris-icons';
 import ReviewListItem from '../components/ReviewListItem';
-import {settings} from '../icons';
 
 function ReviewList({data: {loading, reviews}}) {
   /* Comment or uncomment the next two lines to toggle the loading state */
@@ -20,16 +20,14 @@ function ReviewList({data: {loading, reviews}}) {
   // reviews = null;
 
   /* Comment or uncomment the next line to toggle the empty state */
-  // reviews = [];
+  reviews = [];
 
   const loadingStateContent = loading ? (
     <Card sectioned>
       <TextContainer>
-        {/* Let's add skeleton content from the style guide playground here */}
-        {/* First, go to https://polaris.shopify.com to view the style guide.*/}
-        {/* Use the search bar (top right) to find "skeleton" components. */}
-        {/* Look at the different examples provided by selecting from the example menu at the top of the component pages. */}
-        {/* Use skeleton components to replace these comments! */}
+        <SkeletonDisplayText size="small" />
+        <SkeletonBodyText />
+        <SkeletonBodyText />
       </TextContainer>
     </Card>
   ) : null;
@@ -38,7 +36,7 @@ function ReviewList({data: {loading, reviews}}) {
     reviews && reviews.length === 0 ? (
       <EmptyState
         heading="You haven't received any reviews yet"
-        // add an "action" prop that links to the '/settings' route
+        action={{content: 'Configure settings', url: '/settings'}}
         image="/review-empty-state.svg"
       >
         <p>Once you have received reviews they will display on this page.</p>
@@ -51,7 +49,12 @@ function ReviewList({data: {loading, reviews}}) {
     ) : null;
 
   return (
-    <Page title="Product reviews">
+    <Page
+      title="Product reviews"
+      secondaryActions={[
+        {icon: SettingsMajor, content: 'Settings', url: '/settings'},
+      ]}
+    >
       {emptyStateContent}
       {loadingStateContent}
       {reviewsIndex}
